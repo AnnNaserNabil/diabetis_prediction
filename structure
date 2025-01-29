@@ -1,0 +1,35 @@
+healthcare_data_project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # Streamlit entry point
+│   ├── pages/
+│   │   ├── home.py          # Landing page
+│   │   ├── data_analysis.py # Page for data analysis
+│   │   ├── disease_predictor.py # Disease prediction model interface
+│   │   └── visualization.py # Page for visualizations
+├── src/
+│   ├── __init__.py
+│   ├── data_ingestion/
+│   │   ├── __init__.py
+│   │   └── healthcare_data_loader.py
+│   ├── data_storage/
+│   │   ├── __init__.py
+│   │   └── data_warehouse_connector.py
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── etl.py
+│   │   └── data_cleaner.py
+│   ├── data_analysis/
+│   │   ├── __init__.py
+│   │   ├── patient_analyzer.py
+│   │   └── disease_predictor.py
+│   └── data_visualization/
+│       ├── __init__.py
+│       └── visualizer.py
+├── config/
+│   ├── database_config.json
+│   └── api_keys.json
+├── requirements.txt          # Dependencies for Streamlit and other packages
+├── README.md
+└── .streamlit/
+    └── config.toml           # Streamlit configuration file (for theme, etc.)
