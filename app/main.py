@@ -1,20 +1,18 @@
-# app/main.py
 import streamlit as st
-from app.pages import home, disease_predictor
+from app.pages import home, data_analysis, disease_predictor, visualization
 
 PAGES = {
     "Home": home,
-    "Disease Predictor": disease_predictor
+    "Data Analysis": data_analysis,
+    "Disease Predictor": disease_predictor,
+    "Visualization": visualization
 }
 
 def main():
-    st.set_page_config(page_title="Disease Prediction System", layout="wide")
-    
     st.sidebar.title("Navigation")
     selection = st.sidebar.radio("Go to", list(PAGES.keys()))
-    
     page = PAGES[selection]
-    page.show()
+    page.app()
 
 if __name__ == "__main__":
     main()

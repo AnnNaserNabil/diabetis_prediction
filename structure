@@ -29,6 +29,9 @@ healthcare_data_project/
 ├── config/
 │   ├── database_config.json
 │   └── api_keys.json
+|---|data/
+|   |---Testing.csv
+|   |---Training.csv
 ├── requirements.txt          # Dependencies for Streamlit and other packages
 ├── README.md
 └── .streamlit/
